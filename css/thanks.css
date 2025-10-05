@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #ffffff;
+    background: linear-gradient(to bottom, #ffffff 0%, #e1e8ed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e8ed',GradientType=0 );
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-2 {
+    padding: 30px;
+    text-align: center;
+}
+h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 4em;
+    letter-spacing: 3px;
+    color: #ff7f41ff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.wrapper-2 p {
+    margin: 0;
+    font-size: 1.3em;
+    color: #aaa;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 1px;
+}
+.go-home {
+    background: #ff7f41ff;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 14px 42px;
+    margin-top: 42px;
+    margin-right: 12px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    visibility: visible;
+    animation-delay: 2.3s;
+    animation-name: fadeInUp;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0;
+}
+.go-home:hover {
+    background: transparent;
+    border-color: #ff7f41ff;
+}
+a:hover .go-home {
+    color: #ff7f41ff;
+}
+.go-home a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-like {
+    margin-top: auto;
+    background: #d7e6fe;
+    padding: 6px;
+    text-align: center;
+}
+.footer-like p {
+    margin: 0;
+    padding: 4px;
+    color: #ffc107;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 1px;
+}
+.footer-like p a {
+    text-decoration: none;
+    color: #ffc107;
+    font-weight: 600;
+}
+
+@media (min-width: 360px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .go-home {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 600px) {
+    .content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .wrapper-1 {
+        height: initial;
+        max-width: 620px;
+        margin: 0 auto;
+        margin-top: 50px;
+        box-shadow: 4px 8px 40px 8px lightgray;
+    }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.cookie-wrapper {
+    position: fixed;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    z-index: 999;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+.cookie-wrapper .show {
+    right: 20px;
+}
+
+.hidden {
+    display: none;
+}
+header i {
+    color: #ff7f41ff;
+    font-size: 32px;
+    text-align: center;
+}
+header h2 {
+    color: #ff7f41ff;
+    font-weight: 500;
+    text-align: center;
+}
+.data {
+    text-align: center;
+}
+.data p a {
+    color: #ff7f41ff;
+    text-decoration: none;
+    text-align: center !important;
+}
+.data p a:hover {
+    text-decoration: underline;
+}
+.buttons {
+    padding: 20px 0px;
+    text-align: center;
+}
+.buttons .cookie-button {
+    border: 2px solid #ff7f41ff;
+    color: #fff;
+    padding: 8px 0;
+    background: #ff7f41ff;
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+    max-width: 150px;
+    border-radius: 0px;
+}
+.buttons #acceptBtn:hover {
+    background-color: transparent;
+    color: #ff7f41ff;
+}
+#declineBtn {
+    background-color: #fff;
+    color: #ff7f41ff;
+    border-radius: 0;
+}
+#declineBtn:hover {
+    background-color: #ff7f41ff;
+    color: #fff;
+}
